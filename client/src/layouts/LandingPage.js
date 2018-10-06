@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "@material-ui/core/Button";
 import { withStyles } from '@material-ui/core/styles';
 
 
@@ -19,6 +20,18 @@ class LandingPage extends Component {
 		return (
 			<div className={classes.bar}>
 				LandingPage
+				<div style={{ display: "flex" }}>
+					<div style={{ flex: 1 }} />
+					<div>
+						<Button
+                            href="/add"
+							variant="outlined"
+							color="primary"
+						>
+							Add new image
+						</Button>
+					</div>
+				</div>
 			</div>
 		);
 	}

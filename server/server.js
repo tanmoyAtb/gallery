@@ -38,6 +38,7 @@ app.use((req, res, next) => {
 	next();
 });
 
+app.use('/images', express.static('./images'));
 const imageRouter = require("./routes/imageRouter");
 app.use("/api/", imageRouter);
 
